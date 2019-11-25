@@ -1,4 +1,4 @@
-# Curve Editor
+# ![Curve Editor](https://vimeo.com/375371794)
 
 This is meant to be a reduced version of the Animation Editor which can work in Perform Mode. Drag the .tox component into any project and it will output a single chop channel of the curve which can be used to drive any animation.
 
