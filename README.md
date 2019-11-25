@@ -37,3 +37,9 @@ Snap function and changing grid size (similar to the Animation Editor) are possi
 If points get too close on the x-axis but are too far away on the y-axis, sometimes the results can be noisy. Adjust the point coordinate and slope to solve this.
 
 ![ui](/Source/img/error.PNG)
+
+## Future
+
+Enable tangents to have a negative y slope.
+
+Be able to save presets and switch between them.
