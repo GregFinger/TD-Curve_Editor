@@ -12,7 +12,7 @@ Points can be moved by clicking and dragging the blue dot. Note: the first and l
 
 Points can be deleted by being selected and then pressing the delete key. Note: the first and last points cannot be deleted.
 
-The tab key will cycle through and select each point. This is a non-destructive way of selecting a point, since clicking on a point will often time shift its position.
+The tab key will cycle through and select each point. This is a non-destructive way of selecting a point, since clicking on a point will often shift its position.
 
 Dragging the yellow dot will adjust the slope of the point.
 
@@ -28,11 +28,9 @@ Dragging the yellow dot will adjust the slope of the point.
 **Pop Out:** Creates a size-adjustable separate window for the Curve Editor, in case the Curve Editor embedded in your UI is too small to use
 
 ## Notes
-This is all in python, so calculations could be a little slow. However since this isn't be adjusted continuously, there usually is no impact on performance. It's possible to do all the math in GLSL, just involves porting some scipy sub-modules into glsl.
+This is all in python, so calculations could be a little slow. However since this isn't adjusted continuously, there usually is no impact on performance. It's possible to do all the math in GLSL, just involves porting some scipy sub-modules into glsl.
 
 The x and y axis are both currently fixed from 0 to 1. It's possible this can be adjustable in future versions. To adjust it on your own, from the output chop channel, you can use a Math CHOP's range function to remap the y-axis range, or a Stretch CHOP to lengthen or shorten the x-axis.
-
-Snap function and changing grid size (similar to the Animation Editor) are possibilities for future versions.
 
 If points get too close on the x-axis but are too far away on the y-axis, sometimes the results can be noisy. Adjust the point coordinate and slope to solve this.
 
@@ -43,3 +41,5 @@ If points get too close on the x-axis but are too far away on the y-axis, someti
 Enable tangents to have a negative y slope.
 
 Be able to save presets and switch between them.
+
+Snap function and changing grid size
