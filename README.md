@@ -32,7 +32,7 @@ This is all in python, so calculations could be a little slow. However since thi
 
 The x and y axis are both currently fixed from 0 to 1. It's possible this can be adjustable in future versions. To adjust it on your own, from the output chop channel, you can use a Math CHOP's range function to remap the y-axis range, or a Stretch CHOP to lengthen or shorten the x-axis.
 
-If points get too close on the x-axis but are too far away on the y-axis, sometimes the results can be noisy. Adjust the point coordinate and slope to solve this. Running the output through Filter CHOP with Time Slice off can also fix this.
+If points get too close on the x-axis but are too far away on the y-axis, sometimes the results can be noisy. Adjust the point coordinate and slope to solve this.
 
 ![ui](/Source/img/error.PNG)
 
@@ -43,3 +43,5 @@ Enable tangents to have a negative y slope.
 Be able to save presets and switch between them.
 
 Snap function and changing grid size
+
+Store ui parameters and points as custom parameters in the component for easy access

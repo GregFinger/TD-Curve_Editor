@@ -411,7 +411,7 @@ class _PPolyBase(object):
         x = np.asarray(x)
         x_shape, x_ndim = x.shape, x.ndim
         x = np.ascontiguousarray(x.ravel(), dtype=np.float_)
-        out = np.empty((len(x), np.prod(self.c.shape[2:])), dtype=self.c.dtype)
+        out = np.empty((len(x), int(np.prod(self.c.shape[2:]))), dtype=self.c.dtype)
         self._ensure_c_contiguous()
         self._evaluate(x, nu, extrapolate, out)
         out = out.reshape(x_shape + self.c.shape[2:])
